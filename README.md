@@ -23,13 +23,13 @@ localhost:5000/api/historian
 
 ## Usage example
 
-Query All Historians:
+Query All Historians:<br>
 curl http://127.0.0.1:5000/api/historian/30
 
-Query Historian #30:
+Query Historian #30:<br>
 curl http://127.0.0.1:5000/api/historian/30
 
-Search for Historian with name like "Anthony":
+Search for Historian with name like "Anthony":<br>
 curl \ -G \ -H "Content-type: application/json" \ -d "q={\"filters\":[{\"name\":\"name\",\"op\":\"like\",\"val\":\"%Anthony%\"}]}" \ http://127.0.0.1:5000/api/historian
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
