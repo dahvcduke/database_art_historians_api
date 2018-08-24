@@ -1,0 +1,16 @@
+import os
+
+S3_LOCATION = 'http://your-amazon-site.amazonaws.com/'
+S3_KEY = 'YOURAMAZONKEY'
+S3_SECRET = 'YOURAMAZONSECRET'
+S3_UPLOAD_DIRECTORY = 'what_directory_on_s3'
+S3_BUCKET = 's3_bucket_name'
+SECRET_KEY ='thisissecret'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///database.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+TEMPLATES_AUTO_RELOAD = True
+CSRF_ENABLED = True
+USER_ENABLED_EMAIL = False
+USER_APP_NAME = 'GALLERY'
+USER_ENABLE_CONFIRM_EMAIL = False
+WHOOSH_BASE = 'whoosh'
