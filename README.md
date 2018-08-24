@@ -25,7 +25,7 @@ localhost:5000/api/historian
 
 Query All Historians:<br>
 ```sh
-curl http://127.0.0.1:5000/api/historian/30
+curl http://127.0.0.1:5000/api/historian
 ```
 
 Query Historian #30:<br>
@@ -33,9 +33,9 @@ Query Historian #30:<br>
 curl http://127.0.0.1:5000/api/historian/30
 ```
 
-Search for Historian with name like "Anthony":<br>
+Search for Historian with name like "Frederick":<br>
 ```sh
-curl \ -G \ -H "Content-type: application/json" \ -d "q={\"filters\":[{\"name\":\"name\",\"op\":\"like\",\"val\":\"%Anthony%\"}]}" \ http://127.0.0.1:5000/api/historian
+curl -G -H "Content-type: application/json" -d "q={\"filters\":[{\"name\":\"name\",\"op\":\"like\",\"val\":\"%Frederick%\"}]}" http://127.0.0.1:5000/api/historian
 ```
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
