@@ -14,7 +14,7 @@ python fill_db.py
 ```
 
 Running the Application:
-```
+```sh
 python app.py
 
 navitate to:
@@ -24,13 +24,19 @@ localhost:5000/api/historian
 ## Usage example
 
 Query All Historians:<br>
+```sh
 curl http://127.0.0.1:5000/api/historian/30
+```
 
 Query Historian #30:<br>
+```sh
 curl http://127.0.0.1:5000/api/historian/30
+```
 
 Search for Historian with name like "Anthony":<br>
+```sh
 curl \ -G \ -H "Content-type: application/json" \ -d "q={\"filters\":[{\"name\":\"name\",\"op\":\"like\",\"val\":\"%Anthony%\"}]}" \ http://127.0.0.1:5000/api/historian
+```
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
