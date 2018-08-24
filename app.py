@@ -29,19 +29,6 @@ class Historian(db.Model):
     subject_area = db.Column(db.String())
     path = db.Column(db.String())
 
-def query_model(data=None, **kwargs):
-	query = data['title']
-	sim = model.most_similar([query], topn=10)
-	results_data = json.dumps(sim)
-	cluster = Cluster(title=query)
-	db.session.add(cluster)
-	
-	for i in range(0, 9):
-		result = Result(data=sim[i][0], cluster_id=cluster.id)
-		db.session.add(result)
-		db.session.commit()
-
-
 manager = APIManager(app, flask_sqlalchemy_db=db)
 
 manager.create_api(Historian, methods=['GET'], allow_patch_many=True, results_per_page=100)
