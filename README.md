@@ -8,7 +8,7 @@
 Setup the Application:
 
 ```sh
-pip -r requirements.txt
+pip install -r requirements.txt
 python create_db.py
 python fill_db.py
 ```
